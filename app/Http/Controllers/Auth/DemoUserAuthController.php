@@ -14,11 +14,10 @@ class DemoUserAuthController extends Controller
     {
         $user = User::firstOrCreate([
             'email' => 'demo@interview_foundation.com',
-        ],
-            [
-                'name' => 'Demo User',
-                'password' => Hash::make('password')
-            ]);
+        ], [
+            'name' => 'Demo User',
+            'password' => Hash::make('password')
+        ]);
 
         Auth::login($user);
 
