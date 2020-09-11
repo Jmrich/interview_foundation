@@ -11,7 +11,7 @@
                     </div>
                 </div>
             @else
-
+                <github-container :user-prop="{{ auth()->user() }}" />
             @endguest
         </div>
     </div>

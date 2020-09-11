@@ -40,7 +40,7 @@ class User extends Authenticatable
 
     public function getGithubTokenAttribute($value)
     {
-        return Crypt::decrypt($value);
+        return empty($value) ? null : Crypt::decrypt($value);
     }
 
     public function setGithubTokenAttribute($value)
