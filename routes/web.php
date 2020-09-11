@@ -20,3 +20,8 @@ Route::get('/', function () {
 Route::get('demo-login', 'Auth\DemoUserAuthController')->name('demo-login');
 
 Auth::routes();
+
+Route::middleware('auth')->group(function () {
+    Route::put('github-token', 'Github\SaveGithubTokenController')->name('github.token.update');
+    Route::get('starred-repos', 'Github\StarredReposController')->name('github.starred-repos');
+});
