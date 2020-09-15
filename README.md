@@ -1,7 +1,7 @@
 # Interview Foundation Build
 
 
-[![Build Status](https://travis-ci.org/Jmrich/interview_foundation.svg?branch=develop)](https://travis-ci.org/Jmrich/interview_foundation.svg?branch=develop)
+[![Build Status](https://travis-ci.org/Jmrich/interview_foundation.svg?branch=develop)](https://travis-ci.org/Jmrich/interview_foundation)
 
 This is a vanilla Laravel 7 install
 

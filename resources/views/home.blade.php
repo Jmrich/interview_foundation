@@ -7,7 +7,11 @@
             @guest
                 <div class="card">
                     <div class="card-body">
-                        <a href="{{ route('demo-login') }}" class="btn btn-primary ml-auto mr-auto" style="width: 50%;">Login</a>
+                        <div class="row justify-content-center">
+                            <a href="{{ route('demo-login') }}" class="btn btn-primary ml-auto mr-auto col-sm-6">Login</a>
+                            <div class="col-sm-12">
+                            </div>
+                        </div>
                     </div>
                 </div>
             @else
