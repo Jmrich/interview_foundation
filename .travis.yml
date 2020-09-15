@@ -6,7 +6,12 @@ php:
 services:
   - mysql
 
-## Cache composer
+branches:
+  only:
+    - master
+    - develop
+
+    ## Cache composer
 cache:
   directories:
     - $HOME/.composer/cache
